@@ -1,10 +1,10 @@
 Проект разрабатывается на версии Python 3.11.4
 Используется виртуальное окружение venv
 
-Как запустить проект
+Как запустить проект:
 
 1. Скачайте и установите Python 3.11 (Установите пути в PATH ри установке)
-2. Скачайте Ollama и запустите команду ```ollama run mistral:instruct```
+2. Скачайте и установите Ollama и запустите команду ```ollama run mistral:instruct```
 3. Распакуйте проект и откройте командную строку в проекте, введите команду в командной строке, находясь в папке проекта 
 ```python -m venv venv```
 4. Введите команду в командной строке, находясь в папке проекта ```venv\Scripts\activate```
@@ -12,12 +12,12 @@
 6. Создайте .env файл в папке проекта
 7. Перейдите на сайт https://my.telegram.org/auth?to=apps войдите, создайте приложение и скопируйте API HASH и API_ID
 8. Перейдите в совой аккаунт и создайте бота через @BotFather. После создания возьмите BOT_TOKEN
-9. вставьте в .env следующие строки:
+9. Вставьте в .env следующие строки и сохраните файл:
 ```
 API_ID=ВАШ ID
-API_HASH= ВАШ ХЭШ
-BOT_TOKEN= ВАШ ТОКЕН
-SESSION_NAME= anon
+API_HASH=ВАШ ХЭШ
+BOT_TOKEN=ВАШ ТОКЕН
+SESSION_NAME=anon
 DB_PATH=database/eventdb.sqlite3
 OLLAMA_MODEL=mistral:instruct
 OLLAMA_HOST=http://localhost:11434
